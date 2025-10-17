@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  user-select: none;
+  scroll-behavior: smooth;
+}
+html li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.textecontc {
+  height: 280px;
+  background: linear-gradient(
+    to left top,
+    rgba(66, 13, 78, 0.797),
+    rgba(49, 67, 184, 0.927)
+  );
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.logoContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  margin: 20px 60px 0 30px;
+}
+.imgLogoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  border-radius: 49%;
+  margin-left: 10px;
+}
+.imgLogoCont img {
+  height: 160%;
+  width: 160%;
+  border-radius: 49%;
+}
+.buttonCont {
+  margin-right: -10px;
+}
+.buttonCont button {
+  width: 140px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px;
+  color: rgb(87, 3, 95);
+  background-color: white;
+  transition: 0.2s ease;
+  font-size: 16px;
+}
+.buttonCont button:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+.buttonCont button:active {
+  opacity: 0.8;
+}
+.textecontc h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: -10px;
+}
+.textecontc p {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0 -10px 0;
+}
+.img {
+  height: 600px;
+  width: 100%;
+  background-color: gray;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.obscurite {
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0.5px);
+  background-color: rgba(0, 2, 10, 0.543);
+  z-index: 2;
+}
+.contactDown {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.contactLeft {
+  margin-left: 75px;
+  position: relative;
+}
+.contactLeft:before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -20px;
+  width: 3px;
+  height: 110%;
+  background: linear-gradient(
+    to left,
+    rgba(235, 146, 255, 0.927),
+    rgb(23, 42, 164)
+  );
+}
+.contactLeft h2 {
+  color: rgba(246, 229, 247, 0.785);
+}
+.contactLeft p {
+  font-size: 17px;
+}
+
+.contactRight {
+  margin-right: 120px;
+  border: 1px solid #f4b5f4;
+  padding: 15px 35px 15px 35px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  font-size: 17px;
+}
+.contactRight select {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.rightDiv input {
+  width: 400px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+.rightDiv1 select {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+.rightDiv2 textarea {
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+}
+input {
+  transition: 0.5s ease;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  background-color: white;
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ffff;
+  transform: scale(1.02);
+}
+
+textarea {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ffff;
+}
+
+select {
+  transition: 1s ease;
+}
+select:hover {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ffff;
+  transform: scale(1.02);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px;
+  background-color: rgb(2, 4, 56);
+}
+.highPart {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  color: rgba(227, 227, 227, 0.842);
+  margin: 30px 10px 20px 10px;
+}
+.lidTech {
+  flex: 1.5;
+}
+.lidTech p {
+  font-size: 17px;
+}
+.liens {
+  flex: 1;
+}
+.contactFooter {
+  flex: 1;
+}
+.contactFooter li a {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 17px;
+  line-height: 1.4;
+  color: rgba(227, 227, 227, 0.842);
+}
+.contactFooter li a:hover {
+  color: white;
+}
+.news {
+  flex: 1.8;
+  font-size: 17px;
+  line-height: 1.4;
+}
+.news form {
+  margin-top: -6px;
+}
+.news input {
+  height: 32px;
+  width: 320px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.news input:focus {
+  scale: 1.02;
+  border: 1px solid rgb(76, 89, 202);
+}
+.news button {
+  height: 34px;
+  width: 34px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(2, 4, 56);
+  background-color: white;
+  transition: 0.3s ease;
+}
+.news button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.news button:active {
+  opacity: 0.8;
+}
+.highPart li {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.highPart h1 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px;
+  position: relative;
+}
+.highPart h1:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: -1px;
+  width: 80px;
+  height: 2px;
+  background: white;
+}
+.reseaux {
+  margin-top: 10px;
+}
+.reseaux ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 17px;
+}
+.reseaux a {
+  color: rgba(227, 227, 227, 0.842);
+}
+.reseaux a:hover {
+  color: white;
+}
+.liens a {
+  color: rgba(227, 227, 227, 0.842);
+  font-size: 17px;
+}
+.liens h1 {
+  white-space: nowrap;
+}
+.foot {
+  color: black;
+}
+.foot:hover {
+  color: white;
+}
+.foot:hover:after {
+  width: 0;
+}
+.downPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  gap: 7px;
+  margin: 30px 0 0 0;
+  color: rgba(227, 227, 227, 0.842);
+}
+.downPart:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  width: 80%;
+  height: 0.1px;
+  background: rgb(131, 129, 129);
+}
